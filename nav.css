@@ -84,6 +84,18 @@ main {
     padding-bottom: 5%;
 }
 
+.single-column {
+    width: 100%;
+}
+
+#port-desktop {
+    width: 50%;
+}
+
+#port-phone {
+    width: 30%;
+}
+
 /*タブレットやPC用のレイアウト*/
 @media screen and (min-width: 600px) {
 
