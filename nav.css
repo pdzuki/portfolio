@@ -1,0 +1,106 @@
+/*スマホで見たときのレイアウト*/
+body {
+    background-color: rgb(253, 253, 253);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.menu li {
+    list-style: none;
+    padding: 9px;
+    font-size: 1.125rem;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li img {
+    width: 40px;
+    height: auto;
+}
+
+.menu li:nth-of-type(n+2) {
+    display: none;
+}
+
+.menu li:nth-of-type(2) {
+    display: block;
+}
+
+main {
+    padding-left: 0%;
+}
+
+.box {
+    display: flex;
+    align-items: flex-start;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #d9d9d9,
+                 -20px -20px 60px #ffffff;
+    margin-bottom: 9%;
+}
+
+.box a {
+    word-break: break-all;
+}
+
+#hana-neko {
+    border-radius: 50%;
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.picture-column {
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.picture-column img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+}
+
+/*タブレットやPC用のレイアウト*/
+@media screen and (min-width: 600px) {
+
+    .menu li {
+        padding: 15px;
+    }
+
+    .menu li:nth-of-type(n+2) {
+        display: block;
+    }
+
+    .menu li:nth-of-type(2) {
+        display: none;
+    }
+
+    main {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #hana-neko {
+        margin-right: 20px;
+    }
+}
