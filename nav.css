@@ -1,6 +1,6 @@
 /*スマホで見たときのレイアウト*/
 body {
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(253, 253, 253); 
 }
 
 .menu {
@@ -54,15 +54,23 @@ main {
     align-items: flex-start;
     background-color: royalblue;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     background: #ffffff;
     box-shadow:  20px 20px 60px #d9d9d9,
-                 -20px -20px 60px #ffffff;
+                 -20px -20px 60px #ffffff; 
     margin-bottom: 9%;
 }
 
 .box a {
     word-break: break-all;
+}
+
+.content-block h1, .content-block h2, .content-block h3{
+    margin: 0;
+}
+
+h4 p {
+    margin: 0;
 }
 
 #hana-neko {
